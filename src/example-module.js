@@ -6,7 +6,7 @@ const exampleModule = {
   },
 
   setupView() {
-    const element = setupView();
+    const element = buildElement();
 
     document.body.appendChild(element);
     this.view.element = element;
@@ -15,7 +15,7 @@ const exampleModule = {
 
 export default exampleModule;
 
-function setupView() {
+function buildElement() {
   const element = document.createElement('div');
   element.id = exampleModule.view.elementID;
   
