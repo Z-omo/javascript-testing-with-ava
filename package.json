@@ -14,7 +14,6 @@
     "@babel/preset-env": "^7.6.0",
     "@babel/register": "^7.6.0",
     "ava": "^5.1.0",
-    "browser-env": "^3.3.0",
     "esm": "^3.2.25",
     "jsdom": "^20.0.3"
   },
@@ -26,8 +25,7 @@
     "verbose": true,
     "require": [
       "esm",
-      "./tests/_babel-register.cjs",
-      "./tests/_browser-env.cjs"
+      "./tests/_babel-register.cjs"
     ]
   }
 }

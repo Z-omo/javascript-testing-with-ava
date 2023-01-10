@@ -1,5 +1,11 @@
 import test from "ava";
+import { JSDOM } from 'jsdom';
 import module from "../src/example-module.js";
+
+// Set up global objects for browser emulation:
+const dom = new JSDOM();
+global.document = dom.window.document;
+global.navigator = dom.window.navigator;
 
 test('Module imported is an object', t => {
   t.is(typeof module, 'object');
