@@ -18,6 +18,6 @@ export default exampleModule;
 function buildElement() {
   const element = document.createElement('div');
   element.id = exampleModule.view.elementID;
-  
+
   return element;
 }
